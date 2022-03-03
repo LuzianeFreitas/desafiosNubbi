@@ -18,26 +18,21 @@ function contaNotas(valor) {
         if(valor >= 100) {
             valor = valor-100;
             cem++;
+            arrayDeValores.push(100);
         }else if(valor >= 50) {
             valor = valor-50;
             cinquenta++;
+            arrayDeValores.push(50);
         }else if(valor >= 20) {
             valor = valor-20;
             vinte++;
+            arrayDeValores.push(20);
         }else if(valor >= 10) {
             valor = valor-10;
             dez++;
+            arrayDeValores.push(10);
         }   
     }
-    
-    if(cem > 0)
-        arrayDeValores.push(100);
-    if(cinquenta > 0)    
-        arrayDeValores.push(50);
-    if(vinte > 0)
-        arrayDeValores.push(20);
-    if(dez > 0)
-        arrayDeValores.push(10);
 
     return arrayDeValores;
 }
